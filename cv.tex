@@ -1,0 +1,88 @@
+% Compile using LuaLaTeX
+\documentclass[11pt, letterpaper]{article}
+
+\usepackage{xcolor-material}
+\usepackage[left=0.65in, right=0.65in, vmargin=0.65in]{geometry}
+\usepackage[final]{microtype}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+
+\renewcommand{\familydefault}{\sfdefault}
+\titlespacing*{\section} {0pt}{2.5ex}{1ex}
+\setlength{\parindent}{0pt}
+\titleformat{\section}{\Large\raggedright}{}{0em}{}
+\thispagestyle{empty}
+
+\begin{document}
+
+%==============================================================================
+% "business card" section
+%==============================================================================
+\begin{minipage}{.5\textwidth}
+\begin{tabular}{@{}l@{}} % @{} removes tabular outer padding
+\color{GoogleBlue}
+{\Huge Pontus Hjortskog}\\[2ex]
+\color{black}
+{\large Experienced web engineer \: \href{https://github.com/paatus}{\faGithub} \: \href{https://linkedin.com/in/PontusHjortskog}{\faLinkedin}}
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t][1in][t]{.4\textwidth}
+\hfill
+\begin{tabular}{l@{}}
+Grinnekullegatan 77\\
+41742 Göteborg\\[1ex]
++46 707407810\\
+p.hjortskog@gmail.com
+\end{tabular}
+\end{minipage}
+
+%==============================================================================
+% detail section
+%==============================================================================
+\color{GoogleBlue}
+\section{Experience}
+\color{black}
+\begin{tabularx}{\textwidth}{p{1.6in} X}
+  Feb 2021 - Present & Meltwater | Software Engineer\\[1ex]
+                     & - Developed an LLM-powered chat application to enhance user experience in creating and managing Meltwater searches\\
+                     & - Led the full migration from Angular.js to a Next.js React stack, achieving zero downtime and improved maintainability\\
+                     & - Developed a typesafe translation system to ensure translations were present\\
+                     & - Advocated for the adoption of the Typescript type system to minimize future bugs \& improve developer experience.\\
+                     & - Focused on static analysis and tooling to maximize code quality and development velocity\\\\
+
+  Jan 2017 - Feb 2021 & Kvdbil AB | Lead Frontend Developer\\[1ex]
+                      & - Developed and maintained full-stack applications, with a primary focus on frontend development\\
+                      & - Gradually took on Lead Frontend Developer responsibilities, guiding architectural decisions and mentoring team members\\
+                      & - Implemented Server-Side Rendering (SSR) from scratch before it became a common practice in the JavaScript ecosystem\\\\
+
+  Jun 2015 - Late 2016 & JEFF Electronics AB | Software Developer (Part-time)\\[1ex]
+                       & - Specialized as the Linux expert, contributing to embedded system development\\
+                       & - Designed and built a visual interface for embedded heat pump devices, improving usability and functionality\\
+\end{tabularx}
+
+\color{GoogleBlue}
+\section{Education}
+\color{black}
+\begin{tabularx}{\textwidth}{p{1.6in} X}
+  2013 - 2016 & BSc Software engineering \& management \hfill University of Gothenburg \\[1ex]
+  2009 - 2012 & Programmering \& Webdesign \hfill IT-Gymnasiet Göteborg\\
+\end{tabularx}
+
+\color{GoogleBlue}
+\section{Skills}
+\color{black}
+\begin{tabularx}{\textwidth}{p{1.6in} X}
+  Tools                    & TypeScript, JavaScript, Next.js, React, Node.js, SSR, Static Analysis\\[1ex]
+  Development Principles   & Type Safety, Code Quality, Testing, Performance Optimization, Tooling\\[1ex]
+  Mindset                  & Detail-oriented, quality-focused, and future-proofing code through testing and static analysis\\
+\end{tabularx}
+
+\color{GoogleBlue}
+\section{References}
+\color{black}
+References available upon request
+
+\end{document}
